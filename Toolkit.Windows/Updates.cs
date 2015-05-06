@@ -10,7 +10,7 @@ namespace Toolkit.Windows
     public class Updates
     {
 
-        public static bool GetKBInstalledByWMI(string KbId)
+        public static bool IsKBInstalledWMI(string KbId)
         {
             bool ret = false;
 
@@ -32,7 +32,7 @@ namespace Toolkit.Windows
             return (ret);
         }
 
-        public static bool GetKBInstalledByWUApi(string KbId)
+        public static bool IsKBInstalledWUApi(string KbId)
         {
             bool ret = false;
 
