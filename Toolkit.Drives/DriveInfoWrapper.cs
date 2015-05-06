@@ -10,6 +10,7 @@ namespace Toolkit.Drives
     {
         public enum UnitSize
         {
+            Bytes,
             KiloByte,
             MegaByte,
             GigaByte,
@@ -66,6 +67,9 @@ namespace Toolkit.Drives
                     break;
                 case UnitSize.KiloByte:
                     ret = (int)(size / 1024);
+                    break;
+                case UnitSize.Bytes:
+                    ret = (int)size;
                     break;
             }
             return (ret);
