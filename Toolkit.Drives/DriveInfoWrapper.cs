@@ -51,6 +51,16 @@ namespace Toolkit.Drives
             return (ret);
         }
 
+        public int GetPercentFree()
+        {
+            int ret = 0;
+
+            double percent = driveInfo.TotalFreeSpace / (driveInfo.TotalSize / 100);
+            ret = (int)Math.Round(percent, 0);
+            
+            return (ret);
+        }
+
         private int GetSizeInUnit(long size, UnitSize unitSize = UnitSize.GigaByte)
         {
             int ret = 0;
@@ -66,7 +76,7 @@ namespace Toolkit.Drives
                     ret = GetSizeInUnit(size, UnitSize.KiloByte) / 1024;
                     break;
                 case UnitSize.KiloByte:
-                    ret = (int)(size / 1024);
+                    ret = (GetSizeInUnit(size, UnitSize.Bytes) / 1024);
                     break;
                 case UnitSize.Bytes:
                     ret = (int)size;
