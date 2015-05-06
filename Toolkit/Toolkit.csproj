@@ -44,6 +44,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Toolkit.Drives\Toolkit.Drives.csproj">
+      <Project>{5a11c1ae-bf68-4284-9890-28e4634a2871}</Project>
+      <Name>Toolkit.Drives</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
