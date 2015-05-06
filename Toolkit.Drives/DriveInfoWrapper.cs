@@ -33,6 +33,38 @@ namespace Toolkit.Drives
             }
         }
 
+        public string DriveFormat
+        {
+            get
+            {
+                return (driveInfo.DriveFormat);
+            }
+        }
+
+        public string DriveLabel
+        {
+            get
+            {
+                return (driveInfo.VolumeLabel);
+            }
+        }
+
+        public string DriveName
+        {
+            get
+            {
+                return (driveInfo.Name);
+            }
+        }
+
+        public bool IsReady
+        {
+            get
+            {
+                return (driveInfo.IsReady);
+            }
+        }
+
         public int GetTotalSize(UnitSize unitSize = UnitSize.GigaByte)
         {
             int ret = 0;
