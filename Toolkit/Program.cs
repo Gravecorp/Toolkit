@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Toolkit.Drives;
+using Toolkit.Drives.ExtentionMethods;
 
 namespace Toolkit
 {
@@ -25,7 +25,6 @@ namespace Toolkit
                     Console.WriteLine(string.Format("Total size in GB: {0}", di.GetTotalSize(DriveInfoExtentionMethods.UnitSize.GigaByte)));
                     Console.WriteLine(string.Format("Total space free in GB: {0}", di.GetTotalFreeSpace()));
                     Console.WriteLine(string.Format("Percent free: {0}%", di.GetPercentFree()));
-                    Console.WriteLine(string.Format(""));
                     Console.WriteLine();
                 }
             }

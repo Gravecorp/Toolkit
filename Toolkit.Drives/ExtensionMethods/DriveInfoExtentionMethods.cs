@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Toolkit.Drives
+namespace Toolkit.Drives.ExtentionMethods
 {
     public static class DriveInfoExtentionMethods
     {
