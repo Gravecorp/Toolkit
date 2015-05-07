@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolkit.Windows", "Toolkit.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolkit.Drives", "Toolkit.Drives\Toolkit.Drives.csproj", "{5A11C1AE-BF68-4284-9890-28E4634A2871}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolkit.Connectivity", "Toolkit.Connectivity\Toolkit.Connectivity.csproj", "{39A14692-D10E-4A11-902F-183FED248C7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5A11C1AE-BF68-4284-9890-28E4634A2871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A11C1AE-BF68-4284-9890-28E4634A2871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A11C1AE-BF68-4284-9890-28E4634A2871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A14692-D10E-4A11-902F-183FED248C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A14692-D10E-4A11-902F-183FED248C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A14692-D10E-4A11-902F-183FED248C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A14692-D10E-4A11-902F-183FED248C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
