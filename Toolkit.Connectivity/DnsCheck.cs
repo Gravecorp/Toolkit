@@ -44,11 +44,18 @@ namespace Toolkit.Connectivity
 
             options.DnsServers = new IPAddress[] { firstGoogleDns, secondGoogleDns};
 
-            IPAddress[] result = DnsClient.LookupHost(hostname, DnsClient.IPVersion.IPv4, options);
-
-            if(result.Count() > 0)
+            try
             {
-                ret = true;
+                IPAddress[] result = DnsClient.LookupHost(hostname, DnsClient.IPVersion.IPv4, options);
+
+                if (result.Count() > 0)
+                {
+                    ret = true;
+                }
+            }
+            catch (Exception e)
+            {
+
             }
 
             return (ret);
@@ -65,13 +72,19 @@ namespace Toolkit.Connectivity
 
             options.DnsServers = new IPAddress[] { firstGoogleDns, secondGoogleDns };
 
-            IPAddress[] result = DnsClient.LookupHost(hostname, DnsClient.IPVersion.IPv4, options);
-
-            if (result.Count() > 0)
+            try
             {
-                ret = true;
-            }
+                IPAddress[] result = DnsClient.LookupHost(hostname, DnsClient.IPVersion.IPv4, options);
 
+                if (result.Count() > 0)
+                {
+                    ret = true;
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
             return (ret);
         }
     }
