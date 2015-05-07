@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Toolkit.Connectivity;
 using Toolkit.Drives.ExtentionMethods;
 
 namespace Toolkit
@@ -31,10 +32,28 @@ namespace Toolkit
             Console.ReadLine();
         }
 
+        public void RunTest2()
+        {
+            Console.WriteLine("Checking resolve of www.google.com, default dns.");
+            bool succes = DnsCheck.IsResolvingByDefaultDNS("www.google.com");
+            Console.WriteLine("Succes: " + succes.ToString());
+
+            Console.WriteLine("Checking resolve of www.google.com, google dns.");
+            succes = DnsCheck.IsResolvingByGoogleDNS("www.google.com");
+            Console.WriteLine("Succes: " + succes.ToString());
+
+            Console.WriteLine("Checking resolve of www.google.com, open dns.");
+            succes = DnsCheck.IsResolvingByOpenDNS("www.google.com");
+            Console.WriteLine("Succes: " + succes.ToString());
+
+            Console.ReadLine();
+        }
+
         static void Main(string[] args)
         {
             Program p = new Program();
-            p.RunTest1();
+            //p.RunTest1();
+            p.RunTest2();
         }
     }
 }

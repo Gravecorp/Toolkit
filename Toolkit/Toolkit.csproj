@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Toolkit.Connectivity\Toolkit.Connectivity.csproj">
+      <Project>{39a14692-d10e-4a11-902f-183fed248c7c}</Project>
+      <Name>Toolkit.Connectivity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Toolkit.Drives\Toolkit.Drives.csproj">
       <Project>{5a11c1ae-bf68-4284-9890-28e4634a2871}</Project>
       <Name>Toolkit.Drives</Name>
